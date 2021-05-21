@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="imagen/plazavea-logo.jpg" alt=""></div>
+        <div id="titulo"><h1>Sistema de Ventas</h1></div>
+    </header>
+    <div id="Informacion">
+        <div class="form">
+            <div class="lado">
+                <input type="date" placeholder="fecha" class="caja" id="fecha">
+                <select name="cliente" id="cliente" class="caja">
+                    <option value="0">Seleccionar Cliente</option>
+                    <option value="Ana">Ana Gomez</option>
+                    <option value="Julia">Julia Reyes</option>
+                    <option value="Jorge">Jorge Campos</option>
+                </select>
+                <select name="producto" id="prod" class="caja">
+                    <option value="0">Seleccionar Producto</option>
+                    <option value="Aceite">Aceite</option>
+                    <option value="Leche">Leche</option>
+                    <option value="Detergente">Detergente</option>
+                </select>
+                <input type="text" placeholder="Precio" class="caja" id="precio">
+                <input type="text" placeholder="Cantidad" class="caja" id="cant">
+                <button class="boton" onclick="guardar()">Registrar</button>
+
+            </div>
+        </div>
+    </div>
+    <div id="tabla">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Cliente</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th>Accion</th>
+                </tr>
+            </thead >
+            <tbody id="tbd"> 
+            </tbody>
+        </table>
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
